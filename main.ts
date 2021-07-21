@@ -26,3 +26,19 @@ console.log("Distancia entre los puntos: punto1 y punto2 ");
 console.log(punto1.calcularDistancia(punto2));
 console.log("-------------------------------------------------");
 console.log("\n");
+
+//Calcular cuadrante de los puntos
+console.log("El cuadrante del punto1 es: ");
+console.log(punto1.calcularCuadrante());
+console.log("El cuadrante del punto2 es: ");
+console.log(punto2.calcularCuadrante());
+
+//Calcular el punto más cercano
+console.log("Calcular el punto más cercano al punto1, dado un "
++ "array de puntos.");
+console.log("Ejemplo: [(-2,-10); (0, 5); (-7,2); (1,-3)]");
+let punto3: Punto = new Punto(0,5);
+let punto4: Punto = new Punto(-7,2);
+let punto5: Punto = new Punto(1,-3);
+let puntos:Punto[] = [punto2, punto3, punto4, punto5];
+console.log(punto1.calcularMasCercano(puntos));
